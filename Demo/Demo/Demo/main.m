@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSMutableArray+SafeTransaction.h"
+#import "NSMutableArray+DP_ThreadSafeTransaction.h"
 
 #define UseSafeTrasation 1
 
@@ -22,7 +22,7 @@ int main(int argc, const char * argv[])
             while (1) {
                 @autoreleasepool {
 #if UseSafeTrasation
-                    id obj = [arr inReadTransaction:^id{
+                    id obj = [arr dp_readTransaction:^id{
                         NSUInteger count = arr.count;
                         return arr[count - 1];
                     }];
@@ -38,7 +38,7 @@ int main(int argc, const char * argv[])
             while (1) {
                 @autoreleasepool{
 #if UseSafeTrasation
-                    [arr inWriteTransaction:^{
+                    [arr dp_writeTransaction:^{
                         
                         [arr removeLastObject];
                         [arr addObject:@"3"];

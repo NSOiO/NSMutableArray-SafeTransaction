@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (SafeTransaction)
+@interface NSMutableArray (DP_ThreadSafeTransaction)
 
-- (id)inReadTransaction:(id(^)(void))readBlock;
-- (void)inWriteTransaction:(void (^)(void))writeBlock;
+- (id)dp_readTransaction:(id(^)(void))readBlock;
+- (void)dp_writeTransaction:(void (^)(void))writeBlock;
 
 @end

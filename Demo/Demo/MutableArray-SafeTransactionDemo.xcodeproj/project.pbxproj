@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00DE54861B8440EB008EA217 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE54851B8440EB008EA217 /* main.m */; };
-		00DE548F1B844114008EA217 /* NSMutableArray+SafeTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE548E1B844114008EA217 /* NSMutableArray+SafeTransaction.m */; };
+		00DE548F1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE548E1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		00DE54821B8440EB008EA217 /* MutableArray-SafeTransactionDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MutableArray-SafeTransactionDemo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DE54851B8440EB008EA217 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		00DE548D1B844114008EA217 /* NSMutableArray+SafeTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SafeTransaction.h"; sourceTree = "<group>"; };
-		00DE548E1B844114008EA217 /* NSMutableArray+SafeTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SafeTransaction.m"; sourceTree = "<group>"; };
+		00DE548D1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DP_ThreadSafeTransaction.h"; sourceTree = "<group>"; };
+		00DE548E1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DP_ThreadSafeTransaction.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 		00DE548C1B844114008EA217 /* NSMutableArray+SafeTransaction */ = {
 			isa = PBXGroup;
 			children = (
-				00DE548D1B844114008EA217 /* NSMutableArray+SafeTransaction.h */,
-				00DE548E1B844114008EA217 /* NSMutableArray+SafeTransaction.m */,
+				00DE548D1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.h */,
+				00DE548E1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.m */,
 			);
 			name = "NSMutableArray+SafeTransaction";
 			path = "../../NSMutableArray+SafeTransaction";
@@ -132,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00DE548F1B844114008EA217 /* NSMutableArray+SafeTransaction.m in Sources */,
+				00DE548F1B844114008EA217 /* NSMutableArray+DP_ThreadSafeTransaction.m in Sources */,
 				00DE54861B8440EB008EA217 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
